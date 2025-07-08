@@ -1,5 +1,5 @@
 import React from "react";
 
-export const TapeSection = () => {
+export const Tape = () => {
   return <div>Tape Section</div>;
 };

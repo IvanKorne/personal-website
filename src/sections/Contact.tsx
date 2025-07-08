@@ -1,5 +1,5 @@
 import React from "react";
 
-export const ContactSection = () => {
+export const Contact = () => {
   return <div>Contact Section</div>;
 };

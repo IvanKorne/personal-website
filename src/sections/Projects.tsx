@@ -1,5 +1,5 @@
 import React from "react";
 
-export const ProjectsSection = () => {
+export const Projects = () => {
   return <div>Projects Section</div>;
 };
