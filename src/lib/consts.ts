@@ -1,4 +1,5 @@
-import { HeaderTab } from "./types";
+import { HeaderTab, SocialIcon } from "./types";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export const HEADER_TABS: HeaderTab[] = [
   {
@@ -21,4 +22,10 @@ export const HEADER_TABS: HeaderTab[] = [
     link: "#contact",
     title: "Contact",
   },
+];
+
+export const SOCIAL_ICONS: SocialIcon[] = [
+  { link: "https://github.com/IvanKorne", icon: Github },
+  { link: "https://www.linkedin.com/in/ivan-korneychuk/", icon: Linkedin },
+  { link: "mailto:ikorney@uwaterloo.ca", icon: Mail },
 ];
