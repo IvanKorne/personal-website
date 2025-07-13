@@ -6,7 +6,7 @@ import { Column } from "@/components/layout/Column";
 
 export const Hero = () => {
   return (
-    <div className="py-16 md:py-48">
+    <div className="py-16 md:py-32 lg:py-40">
       <div className="container">
         <Column className="items-center">
           <Image
@@ -23,16 +23,18 @@ export const Hero = () => {
             </p>
           </div>
         </Column>
-        <h1 className="font-serif mt-6 text-3xl md:text-5xl text-center tracking-wide">
-          Ivan Korneychuk
-        </h1>
-        <p className="text-center text-white/60 px-12 mt-4">
-          Computer engineering student at the University of Waterloo. Full-stack
-          developer, previously interned at <span>Faire</span> and
-          <span> Blaise Transit</span>. Always looking for opportunities to
-          grow!
-        </p>
-        <Column className="items-center gap-4 mt-8">
+        <div className="max-w-lg mx-auto">
+          <h1 className="font-serif mt-6 text-3xl md:text-5xl text-center tracking-wide">
+            Ivan Korneychuk
+          </h1>
+          <p className="text-center text-white/60 mt-4 md:text-lg">
+            Computer engineering student at the University of Waterloo.
+            Full-stack developer, previously interned at <span>Faire</span> and
+            <span> Blaise Transit</span>. Always looking for opportunities to
+            grow!
+          </p>
+        </div>
+        <div className="items-center gap-4 mt-8 flex flex-col md:flex-row justify-center">
           <button className="inline-flex items-center gap-4 border border-white/15 px-6 h-12 rounded-xl">
             <span className="font-semibold">Explore my page!</span>
             <ArrowDown />
@@ -40,7 +42,7 @@ export const Hero = () => {
           <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl">
             👋 <span className="font-semibold"> Let&#39;s connect</span>
           </button>
-        </Column>
+        </div>
       </div>
     </div>
   );
