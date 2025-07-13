@@ -3,10 +3,17 @@ import Image from "next/image";
 import Headshot from "@/assets/images/headshot.jpeg";
 import { ArrowDown } from "lucide-react";
 import { Column } from "@/components/layout/Column";
+import grainImage from "@/assets/images/grain.jpg";
+import { Rings } from "./Rings";
 
 export const Hero = () => {
   return (
-    <div className="py-16 md:py-32 lg:py-40">
+    <div className="py-16 md:py-32 lg:py-40 relative z-0 overflow-x-clip">
+      <div
+        className="absolute inset-0 -z-10 opacity-5"
+        style={{ backgroundImage: `url(${grainImage.src}` }}
+      ></div>
+      <Rings />
       <div className="container">
         <Column className="items-center">
           <Image
