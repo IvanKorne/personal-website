@@ -9,7 +9,7 @@ import styled from "styled-components";
 export const DesktopHeader = () => {
   const hash = useHash();
   return (
-    <div className="flex justify-center items-center fixed top-3 w-full ">
+    <div className="flex justify-center items-center fixed top-3 w-full z-30 ">
       <nav className="flex gap-1 p-1 border border-white/15 border-full bg-white/10 backdrop-blur rounded-full">
         {HEADER_TABS.map((tab: HeaderTab) => (
           <HeaderItem

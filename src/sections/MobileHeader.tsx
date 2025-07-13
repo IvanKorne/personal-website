@@ -16,9 +16,9 @@ export const MobileHeader = () => {
   return (
     <Sheet>
       <SheetTrigger className="w-full justify-end flex p-8">
-        <MenuIcon className="size-10" />
+        <MenuIcon className="size-10 " />
       </SheetTrigger>
-      <SheetContent className="bg-gray-900 text-white antialiased font-sans">
+      <SheetContent className="bg-gray-900 text-white antialiased font-sans z-100">
         <SheetHeader>
           <SheetDescription>
             <Column className="flex flex-col w-full justify-between h-[95vh]">
@@ -48,7 +48,7 @@ export const MobileHeader = () => {
                     key={item.link}
                     className="text-white hover:text-gray-300"
                   >
-                    <item.icon className="size-8 text-white/70 hover:text-white transition duration-300" />
+                    <item.icon className="size-8 text-white/70 hover:text-emerald-300 transition duration-300" />
                   </a>
                 ))}
               </Row>
