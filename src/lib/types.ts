@@ -10,3 +10,9 @@ export type SocialIcon = {
   link: string;
   icon: FC<LucideProps>;
 };
+
+export interface IStar {
+  starSize: number;
+  orbitSize: number;
+  rotation: number;
+}

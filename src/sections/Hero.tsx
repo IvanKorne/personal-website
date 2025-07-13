@@ -5,6 +5,7 @@ import { ArrowDown } from "lucide-react";
 import { Column } from "@/components/layout/Column";
 import grainImage from "@/assets/images/grain.jpg";
 import { Rings } from "./Rings";
+import { Stars } from "./Stars";
 
 export const Hero = () => {
   return (
@@ -14,6 +15,7 @@ export const Hero = () => {
         style={{ backgroundImage: `url(${grainImage.src}` }}
       ></div>
       <Rings />
+      <Stars />
       <div className="container">
         <Column className="items-center">
           <Image
