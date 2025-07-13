@@ -15,10 +15,10 @@ export const DesktopHeader = () => {
           <HeaderItem
             key={tab.title}
             href={tab.link}
-            className={` transition duration-300 rounded-full text-white/70 ${
+            className={` transition duration-300 rounded-full  ${
               hash === tab.link
                 ? "bg-white text-gray-900"
-                : "hover:bg-white/10 hover:text-white"
+                : "hover:bg-white/10 text-white/70 hover:text-white"
             }`}
           >
             {tab.title}

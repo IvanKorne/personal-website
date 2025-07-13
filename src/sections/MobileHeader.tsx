@@ -1,5 +1,5 @@
-import { Column } from "@/components/ui/Column";
-import { Row } from "@/components/ui/Row";
+import { Column } from "@/components/layout/Column";
+import { Row } from "@/components/layout/Row";
 import {
   Sheet,
   SheetContent,
