@@ -10,12 +10,14 @@ import { Stars } from "./Stars";
 export const Hero = () => {
   return (
     <div className="py-16 md:py-32 lg:py-40 relative z-0 overflow-x-clip">
-      <div
-        className="absolute inset-0 -z-10 opacity-5"
-        style={{ backgroundImage: `url(${grainImage.src}` }}
-      ></div>
-      <Rings />
-      <Stars />
+      <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]">
+        <div
+          className="absolute inset-0 -z-10 opacity-5"
+          style={{ backgroundImage: `url(${grainImage.src}` }}
+        ></div>
+        <Rings />
+        <Stars />
+      </div>
       <div className="container">
         <Column className="items-center">
           <Image
