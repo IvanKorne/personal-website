@@ -1,7 +1,7 @@
 "use client";
 
 import { Column } from "@/components/layout/Column";
-import { Spacer } from "@/components/layout/Spacer";
+
 import { useIsMobile } from "@/hooks/useIsMobile";
 import { Header } from "@/sections/Header";
 import { Hero } from "@/sections/Hero";
@@ -12,7 +12,6 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Spacer height={isMobile ? 50 : 150} />
       <Column className="gap-10">
         <Hero />
       </Column>

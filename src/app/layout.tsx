@@ -27,7 +27,7 @@ export default function RootLayout({
         className={cn(
           INTER.variable,
           CALISTOGA.variable,
-          "bg-gray-900 text-white antialiased font-sans"
+          "bg-gray-900 text-white antialiased font-sans text-sm"
         )}
       >
         {children}

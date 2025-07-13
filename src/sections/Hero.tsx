@@ -3,11 +3,10 @@ import Image from "next/image";
 import Headshot from "@/assets/images/headshot.jpeg";
 import { ArrowDown } from "lucide-react";
 import { Column } from "@/components/layout/Column";
-import { Spacer } from "@/components/layout/Spacer";
 
 export const Hero = () => {
   return (
-    <>
+    <div className="py-16 md:py-48">
       <div className="container">
         <Column className="items-center">
           <Image
@@ -24,19 +23,16 @@ export const Hero = () => {
             </p>
           </div>
         </Column>
-        <Spacer height={24} />
-        <h1 className="font-serif text-3xl text-center tracking-wide">
+        <h1 className="font-serif mt-6 text-3xl md:text-5xl text-center tracking-wide">
           Ivan Korneychuk
         </h1>
-        <Spacer height={16} />
-        <p className="text-center text-white/60 px-12">
+        <p className="text-center text-white/60 px-12 mt-4">
           Computer engineering student at the University of Waterloo. Full-stack
           developer, previously interned at <span>Faire</span> and
           <span> Blaise Transit</span>. Always looking for opportunities to
           grow!
         </p>
-        <Spacer height={32} />
-        <Column className="items-center gap-4">
+        <Column className="items-center gap-4 mt-8">
           <button className="inline-flex items-center gap-4 border border-white/15 px-6 h-12 rounded-xl">
             <span className="font-semibold">Explore my page!</span>
             <ArrowDown />
@@ -46,6 +42,6 @@ export const Hero = () => {
           </button>
         </Column>
       </div>
-    </>
+    </div>
   );
 };
