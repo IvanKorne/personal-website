@@ -9,7 +9,7 @@ import { Stars } from "./Stars";
 
 export const Hero = () => {
   return (
-    <div className="py-16 md:py-32 lg:py-40 relative z-0 overflow-x-clip">
+    <div className="py-12 md:py-32 lg:py-40 relative z-0 overflow-x-clip">
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]">
         <div
           className="absolute inset-0 -z-10 opacity-5"
@@ -38,7 +38,7 @@ export const Hero = () => {
           <h1 className="font-serif mt-6 text-3xl md:text-5xl text-center tracking-wide">
             Ivan Korneychuk
           </h1>
-          <p className="text-center text-white/60 mt-4 md:text-lg">
+          <p className="text-center text-white/60 mt-4 md:text-lg lg:text-xl">
             Computer engineering student at the University of Waterloo.
             Full-stack developer, previously interned at <span>Faire</span> and
             <span> Blaise Transit</span>. Always looking for opportunities to

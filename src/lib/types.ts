@@ -1,4 +1,5 @@
 import { LucideProps } from "lucide-react";
+import { StaticImageData } from "next/image";
 import { FC } from "react";
 
 export type HeaderTab = {
@@ -16,3 +17,12 @@ export interface IStar {
   orbitSize: number;
   rotation: number;
 }
+
+export type Project = {
+  date: string;
+  title: string;
+  results: string[];
+  techStack: string[];
+  link: string;
+  image: StaticImageData;
+};
