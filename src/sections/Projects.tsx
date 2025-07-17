@@ -8,7 +8,7 @@ import React from "react";
 
 export const Projects = () => {
   return (
-    <div className="pb-16 ">
+    <div className="pb-16" id="projects">
       <div className="container">
         <h2 className="font-serif text-3xl md:text-5xl text-center">
           Featured Projects
