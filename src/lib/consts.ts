@@ -119,3 +119,22 @@ export const PROJECTS: Project[] = [
     ],
   },
 ];
+
+export const TAPE_WORDS = [
+  "Adaptable",
+  "Proactive",
+  "Efficient",
+  "Meticulous",
+  "Curious",
+  "Collaborative",
+  "Reliable",
+  "Innovative",
+  "Communicative",
+  "Driven",
+  "Robust Architecture",
+  "Well-Tested Features",
+  "User-Centered Design",
+  "Performance Optimized",
+  "Security Focused",
+  "Maintainable Solutions",
+];
