@@ -26,3 +26,12 @@ export type Project = {
   link: string;
   image: StaticImageData;
 };
+
+export type Expereince = {
+  company_name: string;
+  position: string;
+  location: string;
+  date: string;
+  logo: StaticImageData;
+  results: string[];
+};
