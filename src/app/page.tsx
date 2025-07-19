@@ -1,10 +1,10 @@
 "use client";
 
-import { useIsMobile } from "@/hooks/useIsMobile";
+import { Experience } from "@/sections/Experience/Experience";
 import { Header } from "@/sections/Header/Header";
 import { Hero } from "@/sections/Hero/Hero";
-import { Projects } from "@/sections/Projects";
-import { Tape } from "@/sections/Tape";
+import { Projects } from "@/sections/Projects/Projects";
+import { Tape } from "@/sections/Tape/Tape";
 import React from "react";
 
 export default function Home() {
@@ -14,6 +14,7 @@ export default function Home() {
       <Hero />
       <Projects />
       <Tape />
+      <Experience />
     </>
   );
 }
