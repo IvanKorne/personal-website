@@ -5,6 +5,7 @@ import { CheckCircle } from "lucide-react";
 import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import React from "react";
+import { Card } from "@/components/Card";
 
 export const Projects = () => {
   return (
@@ -24,14 +25,10 @@ export const Projects = () => {
         </p>
         <Column className="mt-10 md:mt-20 gap-12">
           {PROJECTS.map((project) => (
-            <div
-              key={project.link}
-              className="bg-gray-800 px-8 pt-8 md:px-12 md:pt-12 lg:pt-16 lg:px-16 rounded-3xl relative z-0 overflow-hidden after:z-10 after:outline-2 after:outline after:rounded-3xl after:outline-white/20 after:-outline-offset-2 after:content-[''] after:absolute after:inset-0 "
+            <Card
+              className="px-8 pt-8 md:px-12 md:pt-12 lg:pt-16 lg:px-16 pb-0"
+              key={project.title}
             >
-              <div
-                className="absolute inset-0 opacity-5"
-                style={{ backgroundImage: `url(${grainImage.src})` }}
-              ></div>
               <h3 className="font-serif text-3xl md:text-4xl ">
                 {project.title}
               </h3>
@@ -68,7 +65,7 @@ export const Projects = () => {
                   />
                 </div>
               </div>
-            </div>
+            </Card>
           ))}
         </Column>
       </div>
