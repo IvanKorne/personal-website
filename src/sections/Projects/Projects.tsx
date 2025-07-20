@@ -5,11 +5,11 @@ import { CheckCircle } from "lucide-react";
 import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import React from "react";
-import { Card } from "@/components/Card";
+import { Card } from "@/components/Card/Card";
 
 export const Projects = () => {
   return (
-    <div className="pb-16" id="projects">
+    <div className="py-16 " id="projects">
       <div className="container">
         <h2 className="font-serif text-3xl md:text-5xl text-center">
           Featured Projects

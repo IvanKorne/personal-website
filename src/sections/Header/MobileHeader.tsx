@@ -21,7 +21,7 @@ export const MobileHeader = () => {
       <SheetContent className="bg-gray-900 text-white antialiased font-sans z-100">
         <SheetHeader>
           <SheetDescription>
-            <Column className="flex flex-col w-full justify-between h-[95vh]">
+            <Column className="w-full justify-between h-[95vh]">
               <Column className="gap-5 p-2">
                 {HEADER_TABS.map((tab) => (
                   <a

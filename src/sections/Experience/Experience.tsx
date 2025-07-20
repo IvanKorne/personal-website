@@ -2,7 +2,8 @@ import { EXPERIENCES } from "@/lib/consts";
 import { Dot } from "lucide-react";
 import Image from "next/image";
 import React from "react";
-import { Card } from "@/components/Card";
+import { Card } from "@/components/Card/Card";
+import { Row } from "@/components/layout/Row";
 
 export const Experience = () => {
   return (
@@ -12,16 +13,16 @@ export const Experience = () => {
           Experiences
         </h2>
         <p className="text-center text-white/60 mt-4 md:text-lg max-w-md mx-auto">
-          My coding journey so far...
+          My coding journey so far
         </p>
-        <div className="mt-12 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-          <div className="flex gap-8 flex-none">
+        <Row className="mt-12  overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+          <Row className="gap-8 flex-none">
             {EXPERIENCES.map((experience) => (
               <Card
                 key={experience.company_name}
                 className="max-w-sm md:max-w-2xl md:p-8"
               >
-                <div className="gap-6 items-center flex">
+                <Row className="gap-6 items-center ">
                   <Image
                     src={experience.logo}
                     alt={`${experience.company_name} logo`}
@@ -45,7 +46,7 @@ export const Experience = () => {
                       </p>
                     </div>
                   </div>
-                </div>
+                </Row>
                 <ul className="mt-6">
                   {experience.results.map((res) => (
                     <li
@@ -59,8 +60,8 @@ export const Experience = () => {
                 </ul>
               </Card>
             ))}
-          </div>
-        </div>
+          </Row>
+        </Row>
       </div>
     </div>
   );

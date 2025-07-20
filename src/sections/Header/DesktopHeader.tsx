@@ -1,5 +1,6 @@
 "use client";
 
+import { Row } from "@/components/layout/Row";
 import { useHash } from "@/hooks/useHash";
 import { HEADER_TABS } from "@/lib/consts";
 import { HeaderTab } from "@/lib/types";
@@ -9,8 +10,8 @@ import styled from "styled-components";
 export const DesktopHeader = () => {
   const hash = useHash();
   return (
-    <div className="flex justify-center items-center fixed top-3 w-full z-30 ">
-      <nav className="flex gap-1 p-1 border border-white/15 border-full bg-white/15 backdrop-blur rounded-full">
+    <Row className="justify-center items-center fixed top-3 w-full z-30 ">
+      <Row className="gap-1 p-1 border border-white/15 border-full bg-white/15 backdrop-blur rounded-full">
         {HEADER_TABS.map((tab: HeaderTab) => (
           <HeaderItem
             key={tab.title}
@@ -24,8 +25,8 @@ export const DesktopHeader = () => {
             {tab.title}
           </HeaderItem>
         ))}
-      </nav>
-    </div>
+      </Row>
+    </Row>
   );
 };
 
