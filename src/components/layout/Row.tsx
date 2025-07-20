@@ -1,10 +1,6 @@
+import { ILayoutProps } from "@/lib/types";
 import React from "react";
 
-type RowProps = {
-  children: React.ReactNode;
-  className?: string;
-};
-
-export const Row = ({ children, className = "" }: RowProps) => {
+export const Row = ({ children, className = "" }: ILayoutProps) => {
   return <div className={`flex flex-row ${className}`}>{children}</div>;
 };
