@@ -34,7 +34,7 @@ export const Projects = () => {
               </h3>
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
-                  <Column className="gap-1 mt-3 bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex font-bold text-sm tracking-widest text-transparent bg-clip-text">
+                  <Column className="gap-1 mt-3 bg-gradient-to-r from-emerald-300 to-sky-400  font-bold text-sm tracking-widest text-transparent bg-clip-text">
                     <span>{project.date}</span>
                     <span>{project.techStack.join(" | ")}</span>
                   </Column>

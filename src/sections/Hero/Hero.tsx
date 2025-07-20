@@ -6,6 +6,7 @@ import { Column } from "@/components/layout/Column";
 import grainImage from "@/assets/images/grain.jpg";
 import { Rings } from "./Rings";
 import { Stars } from "./Stars";
+import { Flex } from "@/components/layout/Flex";
 
 export const Hero = () => {
   return (
@@ -27,12 +28,12 @@ export const Hero = () => {
             width={200}
             height={200}
           />
-          <div className="bg-gray-950 border border-gray-800 px-4 py-2 inline-flex items-center gap-4 rounded-lg -mt-4">
+          <Flex className="bg-gray-950 border border-gray-800 px-4 py-2 items-center gap-4 rounded-lg -mt-4">
             <div className="bg-green-500 size-3 rounded-full"></div>
             <p className="font-medium text-sm">
               Searching for Winter 2026 Co-ops
             </p>
-          </div>
+          </Flex>
         </Column>
         <div className="max-w-lg mx-auto">
           <h1 className="font-serif mt-6 text-3xl md:text-5xl text-center tracking-wide">
