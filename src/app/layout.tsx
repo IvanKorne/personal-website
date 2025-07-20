@@ -5,7 +5,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
+  title: "Ivan Korneychuk | Portfolio",
   description: "Created by Ivan Korneychuk",
 };
 
