@@ -6,7 +6,7 @@ import { Flex } from "@/components/layout/Flex";
 
 export const Tape = () => {
   return (
-    <div className="py-16 lg:py-24 overflow-x-clip">
+    <div className="py-12 lg:py-24 overflow-x-clip">
       <div className="bg-gradient-to-r from-emerald-300 to-sky-400  -rotate-3 -mx-1">
         <Row className="mask-fade-x">
           <Row className="gap-4 flex-none py-3">

@@ -7,7 +7,7 @@ import { Row } from "@/components/layout/Row";
 
 export const Experience = () => {
   return (
-    <div className="py-16 md:py-24">
+    <div className="py-12 md:py-24" id="experience">
       <div className="container">
         <h2 className="font-serif text-3xl md:text-5xl text-center">
           Experiences
@@ -20,7 +20,7 @@ export const Experience = () => {
             {EXPERIENCES.map((experience) => (
               <Card
                 key={experience.company_name}
-                className="max-w-sm md:max-w-2xl md:p-8"
+                className="max-w-sm md:max-w-2xl p-6 md:p-8"
               >
                 <Row className="gap-6 items-center ">
                   <Image

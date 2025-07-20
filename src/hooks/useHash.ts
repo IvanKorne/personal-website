@@ -4,9 +4,7 @@ import { useEffect, useState } from "react";
 
 export const useHash = (): string => {
   const getHash = () => {
-    const raw = window.location.hash;
-
-    return raw ? raw : "#";
+    return window.location.hash;
   };
 
   const [hash, setHash] = useState(() =>

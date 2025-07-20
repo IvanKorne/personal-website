@@ -6,6 +6,7 @@ import {
   SheetDescription,
   SheetHeader,
   SheetTrigger,
+  SheetOverlay,
 } from "@/components/ui/sheet";
 import { useHash } from "@/hooks/useHash";
 import { HEADER_TABS, SOCIAL_ICONS } from "@/lib/consts";
@@ -13,12 +14,14 @@ import { MenuIcon } from "lucide-react";
 
 export const MobileHeader = () => {
   const hash = useHash();
+
   return (
     <Sheet>
-      <SheetTrigger className="w-full justify-end flex p-8">
-        <MenuIcon className="size-10 " />
+      <SheetTrigger className="fixed  w-full z-30 justify-end flex py-3 px-4 transparent bg-gray-900/10 backdrop-blur">
+        <MenuIcon className="size-10" />
       </SheetTrigger>
-      <SheetContent className="bg-gray-900 text-white antialiased font-sans z-100">
+      <SheetOverlay className="bg-black/20 backdrop-blur-sm" />
+      <SheetContent className="bg-gray-900/95 backdrop-blur-md text-white antialiased font-sans border-gray-700">
         <SheetHeader>
           <SheetDescription>
             <Column className="w-full justify-between h-[95vh]">
@@ -27,7 +30,7 @@ export const MobileHeader = () => {
                   <a
                     key={tab.title}
                     href={tab.link}
-                    className={`text-white text-lg border-b py-2 transition duration-300 ${
+                    className={`text-white text-lg border-b py-2 transition duration-300 text-left ${
                       hash === tab.link
                         ? "border-white/70 font-bold"
                         : "hover:border-white/70 hover:font-bold border-white/15 font-semibold"

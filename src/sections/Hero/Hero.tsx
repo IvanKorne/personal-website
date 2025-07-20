@@ -10,7 +10,10 @@ import { Flex } from "@/components/layout/Flex";
 
 export const Hero = () => {
   return (
-    <div className="py-16 md:py-36 lg:py-48 relative z-0 overflow-x-clip">
+    <div
+      className="py-16 md:py-36 lg:py-48 relative z-0 overflow-x-clip"
+      id="home"
+    >
       <div className="absolute inset-0 mask-fade-x">
         <div
           className="absolute inset-0 -z-10 opacity-5"

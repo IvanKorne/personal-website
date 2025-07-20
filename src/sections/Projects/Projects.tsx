@@ -1,5 +1,4 @@
 import { Column } from "@/components/layout/Column";
-import grainImage from "@/assets/images/grain.jpg";
 import { PROJECTS } from "@/lib/consts";
 import { CheckCircle } from "lucide-react";
 import { ExternalLink } from "lucide-react";
@@ -9,7 +8,7 @@ import { Card } from "@/components/Card/Card";
 
 export const Projects = () => {
   return (
-    <div className="py-16 " id="projects">
+    <div className="py-16" id="projects">
       <div className="container">
         <h2 className="font-serif text-3xl md:text-5xl text-center">
           Featured Projects
