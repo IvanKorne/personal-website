@@ -1,4 +1,12 @@
-import { Expereince, HeaderTab, Project, SocialIcon } from "./types";
+import {
+  Expereince,
+  HeaderTab,
+  Project,
+  SocialIcon,
+  Tool,
+  Interest,
+} from "./types";
+
 import { Github, Linkedin, Mail } from "lucide-react";
 import PDFChatImage from "@/assets/images/pdf-chat.png";
 import EngioImage from "@/assets/images/engio.png";
@@ -7,10 +15,34 @@ import WealthWiseImage from "@/assets/images/wealthwise.png";
 import BlaiseLogo from "@/assets/images/blaiseLogo.png";
 import FaireLogo from "@/assets/images/faireLogo.png";
 import WEAccelerateLogo from "@/assets/images/weAccelerateLogo.png";
+import AndroidIcon from "@/assets/icons/android.svg";
+import AWSIcon from "@/assets/icons/aws.svg";
+import ChromeIcon from "@/assets/icons/chrome.svg";
+import DockerIcon from "@/assets/icons/docker.svg";
+import ExpressIcon from "@/assets/icons/express.svg";
+import FirebaseIcon from "@/assets/icons/firebase.svg";
+import GithubIcon from "@/assets/icons/github.svg";
+import JavaIcon from "@/assets/icons/java.svg";
+import JavaScriptIcon from "@/assets/icons/javascript.svg";
+import KotlinIcon from "@/assets/icons/kotlin.svg";
+import MongoDBIcon from "@/assets/icons/mongodb.svg";
+import MySQLIcon from "@/assets/icons/mysql.svg";
+import NextJSIcon from "@/assets/icons/nextjs.svg";
+import NodeIcon from "@/assets/icons/node.svg";
+import PostmanIcon from "@/assets/icons/postman.svg";
+import PrismaIcon from "@/assets/icons/prisma.svg";
+import PythonIcon from "@/assets/icons/python.svg";
+import ReactRouterIcon from "@/assets/icons/react-router.svg";
+import ReactIcon from "@/assets/icons/react.svg";
+import RedisIcon from "@/assets/icons/redis.svg";
+import StripeIcon from "@/assets/icons/stripe.svg";
+import StyledIcon from "@/assets/icons/styled.svg";
+import TailwindIcon from "@/assets/icons/tailwind.svg";
+import TypeScriptIcon from "@/assets/icons/typescript.svg";
 
 export const HEADER_TABS: HeaderTab[] = [
   {
-    link: "#",
+    link: "#home",
     title: "Home",
   },
   {
@@ -179,4 +211,43 @@ export const EXPERIENCES: Expereince[] = [
       "Ran comprehensive unit and end-to-end tests with Cypress to validate reliability and performance.",
     ],
   },
+];
+
+export const TOOLS: Tool[] = [
+  { title: "Java", icon: JavaIcon },
+  { title: "JavaScript", icon: JavaScriptIcon },
+  { title: "Kotlin", icon: KotlinIcon },
+  { title: "Python", icon: PythonIcon },
+  { title: "Styled Components", icon: StyledIcon },
+  { title: "Tailwind CSS", icon: TailwindIcon },
+  { title: "TypeScript", icon: TypeScriptIcon },
+  { title: "React Router", icon: ReactRouterIcon },
+  { title: "React", icon: ReactIcon },
+  { title: "Express.js", icon: ExpressIcon },
+  { title: "Next.js", icon: NextJSIcon },
+  { title: "Node.js", icon: NodeIcon },
+  { title: "Android", icon: AndroidIcon },
+  { title: "AWS", icon: AWSIcon },
+  { title: "Chrome", icon: ChromeIcon },
+  { title: "Docker", icon: DockerIcon },
+  { title: "Firebase", icon: FirebaseIcon },
+  { title: "GitHub", icon: GithubIcon },
+  { title: "MongoDB", icon: MongoDBIcon },
+  { title: "MySQL", icon: MySQLIcon },
+  { title: "Postman", icon: PostmanIcon },
+  { title: "Prisma", icon: PrismaIcon },
+  { title: "Redis", icon: RedisIcon },
+  { title: "Stripe", icon: StripeIcon },
+];
+
+export const INTERESTS: Interest[] = [
+  { name: "Fitness", icon: "💪", alignment: { left: "5%", top: "5%" } },
+  { name: "Fragrances", icon: "🌸", alignment: { left: "2%", top: "40%" } },
+  { name: "AI", icon: "🤖", alignment: { left: "70%", top: "5%" } },
+  { name: "Backend", icon: "⚙️", alignment: { left: "50%", top: "45%" } },
+  { name: "Frontend", icon: "🎨", alignment: { left: "15%", top: "35%" } },
+  { name: "Soccer", icon: "⚽", alignment: { left: "10%", top: "65%" } },
+  { name: "Cooking", icon: "👨‍🍳", alignment: { left: "45%", top: "70%" } },
+  { name: "Learning", icon: "📚", alignment: { left: "25%", top: "10%" } },
+  { name: "Music", icon: "🎵", alignment: { left: "60%", top: "20%" } },
 ];

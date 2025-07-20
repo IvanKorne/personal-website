@@ -35,3 +35,34 @@ export type Expereince = {
   logo: StaticImageData;
   results: string[];
 };
+
+export type Tool = {
+  title: string;
+  icon: React.ElementType;
+};
+
+export type Interest = {
+  name: string;
+  icon: string;
+  alignment: {
+    left: string;
+    top: string;
+  };
+};
+
+export interface ICardHeader {
+  title: string;
+  description: string;
+  className?: string;
+}
+
+export interface IGradientText {
+  children: React.ReactNode;
+  className?: string;
+  as?: keyof JSX.IntrinsicElements;
+}
+
+export interface ILayoutProps {
+  children: React.ReactNode;
+  className?: string;
+}
