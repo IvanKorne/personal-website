@@ -15,7 +15,7 @@ export const Experience = () => {
         <p className="text-center text-white/60 mt-4 md:text-lg max-w-md mx-auto">
           My coding journey so far
         </p>
-        <Row className="mt-12  overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+        <Row className="mt-12  overflow-x-clip mask-fade-x">
           <Row className="gap-8 flex-none">
             {EXPERIENCES.map((experience) => (
               <Card

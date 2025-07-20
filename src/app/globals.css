@@ -71,4 +71,14 @@
   .container {
     @apply lg:max-w-5xl;
   }
+
+  .mask-fade-x {
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 10%,
+      black 90%,
+      transparent
+    );
+  }
 }
