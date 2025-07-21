@@ -9,16 +9,20 @@ export const Tape = () => {
     <div className="py-12 lg:py-24 overflow-x-clip">
       <div className="bg-gradient-to-r from-emerald-300 to-sky-400  -rotate-3 -mx-1">
         <Row className="mask-fade-x">
-          <Row className="gap-4 flex-none py-3">
-            {TAPE_WORDS.map((word) => (
-              <Flex key={word} className="gap-4 items-center">
-                <span className="text-gray-900 uppercase font-extrabold text-sm">
-                  {word}
-                </span>
-                <StarIcon className="size-6 text-gray-900 -rotate-6" />
-              </Flex>
+          <div className="gap-4 flex flex-none py-3 -translate-x-1/2 animate-move-left [animation-duration:30s]">
+            {[...new Array(2)].fill(0).map((_, id) => (
+              <div key={id} className="flex items-center gap-6">
+                {TAPE_WORDS.map((word) => (
+                  <Flex key={word} className="gap-6 items-center">
+                    <span className="text-gray-900 uppercase font-extrabold text-sm">
+                      {word}
+                    </span>
+                    <StarIcon className="size-6 text-gray-900 -rotate-6" />
+                  </Flex>
+                ))}
+              </div>
             ))}
-          </Row>
+          </div>
         </Row>
       </div>
     </div>
