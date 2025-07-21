@@ -1,6 +1,7 @@
 "use client";
 
 import { About } from "@/sections/About/About";
+import { Contact } from "@/sections/Contact/Contact";
 import { Experience } from "@/sections/Experience/Experience";
 import { Header } from "@/sections/Header/Header";
 import { Hero } from "@/sections/Hero/Hero";
@@ -17,6 +18,7 @@ export default function Home() {
       <Tape />
       <Experience />
       <About />
+      <Contact />
     </>
   );
 }
