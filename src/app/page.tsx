@@ -3,6 +3,7 @@
 import { About } from "@/sections/About/About";
 import { Contact } from "@/sections/Contact/Contact";
 import { Experience } from "@/sections/Experience/Experience";
+import { Footer } from "@/sections/Footer/Footer";
 import { Header } from "@/sections/Header/Header";
 import { Hero } from "@/sections/Hero/Hero";
 import { Projects } from "@/sections/Projects/Projects";
@@ -19,6 +20,7 @@ export default function Home() {
       <Experience />
       <About />
       <Contact />
+      <Footer />
     </>
   );
 }

@@ -52,7 +52,7 @@ export const Projects = () => {
                   <a href={project.link}>
                     <button className="bg-white md:w-auto px-4 text-gray-900 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
                       View Project
-                      <ExternalLink className="size-5" />
+                      <ExternalLink className="size-5 -mt-1" />
                     </button>
                   </a>
                 </div>

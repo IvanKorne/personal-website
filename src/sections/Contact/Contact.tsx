@@ -26,7 +26,7 @@ export const Contact = () => {
               className="text-white bg-gray-900 inline-flex items-center justify-center px-6 h-12 rounded-xl gap-2 mt-6 md:mt-0 border border-gray-900"
             >
               <span className="font-semibold w-max">Contact Me</span>
-              <ExternalLink className="size-4 flex-shrink-0 -mt-0.5" />
+              <ExternalLink className="size-4 flex-shrink-0 -mt-1" />
             </a>
           </div>
         </div>

@@ -7,6 +7,11 @@ export type HeaderTab = {
   title: string;
 };
 
+export type FooterLinks = {
+  title: string;
+  href: string;
+};
+
 export type SocialIcon = {
   link: string;
   icon: FC<LucideProps>;

@@ -5,6 +5,7 @@ import {
   SocialIcon,
   Tool,
   Interest,
+  FooterLinks,
 } from "./types";
 
 import { Github, Linkedin, Mail } from "lucide-react";
@@ -250,4 +251,9 @@ export const INTERESTS: Interest[] = [
   { name: "Cooking", icon: "👨‍🍳", alignment: { left: "45%", top: "70%" } },
   { name: "Learning", icon: "📚", alignment: { left: "25%", top: "10%" } },
   { name: "Music", icon: "🎵", alignment: { left: "60%", top: "20%" } },
+];
+
+export const FOOTER_LINKS: FooterLinks[] = [
+  { title: "Github", href: "https://github.com/IvanKorne" },
+  { title: "LinkedIn", href: "https://www.linkedin.com/in/ivan-korneychuk/" },
 ];
