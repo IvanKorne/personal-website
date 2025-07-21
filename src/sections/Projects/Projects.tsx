@@ -23,10 +23,13 @@ export const Projects = () => {
           </a>
         </p>
         <Column className="mt-10 md:mt-20 gap-12">
-          {PROJECTS.map((project) => (
+          {PROJECTS.map((project, i) => (
             <Card
-              className="px-8 pt-8 md:px-12 md:pt-12 lg:pt-16 lg:px-16 pb-0"
+              className="px-8 pt-8 md:px-12 md:pt-12 lg:pt-16 lg:px-16 pb-0 sticky"
               key={project.title}
+              style={{
+                top: `calc(64px + ${i * 40}px`,
+              }}
             >
               <h3 className="font-serif text-3xl md:text-4xl ">
                 {project.title}
