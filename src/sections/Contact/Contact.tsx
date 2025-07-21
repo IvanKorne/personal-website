@@ -17,8 +17,8 @@ export const Contact = () => {
                 Let&apos;s Connect
               </h2>
               <p className="text-base mt-2 font-semibold">
-                Actively exploring co-op roles for Fall 2025, where I can apply
-                my skills and expand them even further.
+                Actively exploring co-op roles for Winter 2026, where I can
+                apply my skills and expand them even further.
               </p>
             </div>
             <a
