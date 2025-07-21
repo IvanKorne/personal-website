@@ -32,7 +32,9 @@ export const Hero = () => {
             height={200}
           />
           <Flex className="bg-gray-950 border border-gray-800 px-4 py-2 items-center gap-4 rounded-lg -mt-4">
-            <div className="bg-green-500 size-3 rounded-full"></div>
+            <div className="bg-green-500 size-3 rounded-full relative">
+              <div className="bg-green-500 absolute inset-0 animate-ping-large rounded-full"></div>
+            </div>
             <p className="font-medium text-sm">
               Searching for Winter 2026 Co-ops
             </p>

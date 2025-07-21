@@ -17,10 +17,17 @@ export type SocialIcon = {
   icon: FC<LucideProps>;
 };
 
-export interface IStar {
-  starSize: number;
-  orbitSize: number;
+export interface IOrbitObject {
+  size: number;
   rotation: number;
+  shouldSpin: boolean;
+  shouldOrbit: boolean;
+  orbitDuration?: number;
+  spinDuration?: number;
+}
+
+export interface IStar extends IOrbitObject {
+  starSize: number;
 }
 
 export type Project = {
