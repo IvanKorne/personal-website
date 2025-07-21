@@ -52,13 +52,19 @@ export const Hero = () => {
           </p>
         </div>
         <div className="items-center gap-4 mt-8 flex flex-col md:flex-row justify-center">
-          <button className="inline-flex items-center gap-4 border border-white/15 px-6 h-12 rounded-xl">
+          <a
+            href="#projects"
+            className="inline-flex items-center gap-4 border border-white/15 px-6 h-12 rounded-xl z-30"
+          >
             <span className="font-semibold">Explore my page!</span>
             <ArrowDown />
-          </button>
-          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl">
+          </a>
+          <a
+            href="#contact"
+            className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl z-30"
+          >
             👋 <span className="font-semibold"> Let&#39;s connect</span>
-          </button>
+          </a>
         </div>
       </div>
     </div>
