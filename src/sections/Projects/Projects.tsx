@@ -1,3 +1,5 @@
+"use client";
+
 import { Column } from "@/components/layout/Column";
 import { PROJECTS } from "@/lib/consts";
 import { CheckCircle } from "lucide-react";
@@ -5,6 +7,7 @@ import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 import { Card } from "@/components/Card/Card";
+import { motion } from "framer-motion";
 
 export const Projects = () => {
   return (
@@ -28,7 +31,7 @@ export const Projects = () => {
               className="px-8 pt-8 md:px-12 md:pt-12 lg:pt-16 lg:px-16 pb-0 sticky"
               key={project.title}
               style={{
-                top: `calc(64px + ${i * 40}px`,
+                top: `calc(64px + ${i * 10}px`,
               }}
             >
               <h3 className="font-serif text-3xl md:text-4xl ">
@@ -45,21 +48,27 @@ export const Projects = () => {
                     {project.results.map((res) => (
                       <li
                         key={res}
-                        className="flex gap-2 text-sm md:text-base text-white/50 -z-10"
+                        className="flex gap-2 text-sm md:text-base text-white/50"
                       >
                         <CheckCircle className="size-5" />
                         <span>{res}</span>
                       </li>
                     ))}
                   </ul>
-                  <a href={project.link}>
-                    <button className="bg-white md:w-auto px-4 text-gray-900 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
-                      View Project
-                      <ExternalLink className="size-5 -mt-1" />
-                    </button>
-                  </a>
+                  <motion.a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileTap={{ scale: 0.95 }}
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                    className="bg-white md:w-auto px-4 text-gray-900 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 relative z-50"
+                  >
+                    View Project
+                    <ExternalLink className="size-5 -mt-1" />
+                  </motion.a>
                 </div>
-                <div className="relative">
+                <div className="relative z-10">
                   <Image
                     src={project.image}
                     alt={project.title}

@@ -64,18 +64,20 @@ export const About = () => {
               <Column className="gap-2 px-6">
                 <motion.p
                   className="font-semibold text-base"
-                  initial={{ width: 0 }}
-                  animate={{ width: "100%" }}
-                  transition={{ duration: 1, ease: "easeInOut" }}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.4 }}
+                  transition={{ duration: 0.6, ease: "easeOut" }}
                 >
                   I&apos;m 20 years old, studying Computer Engineering at the{" "}
                   <GradientText>University of Waterloo</GradientText>.
                 </motion.p>
                 <motion.p
                   className="font-semibold text-base"
-                  initial={{ width: 0 }}
-                  animate={{ width: "100%" }}
-                  transition={{ duration: 1, ease: "easeInOut" }}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.4 }}
+                  transition={{ duration: 0.6, ease: "easeOut" }}
                 >
                   I&apos;m currently working at{" "}
                   <GradientText>Faire</GradientText> as a Frontend Engineering
@@ -83,9 +85,10 @@ export const About = () => {
                 </motion.p>
                 <motion.p
                   className="font-semibold text-base"
-                  initial={{ width: 0 }}
-                  animate={{ width: "100%" }}
-                  transition={{ duration: 1, ease: "easeInOut" }}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.4 }}
+                  transition={{ duration: 0.6, ease: "easeOut" }}
                 >
                   My main focus right now is deepening my understanding of{" "}
                   <GradientText>System Architecture</GradientText> and exploring
@@ -95,9 +98,10 @@ export const About = () => {
                 </motion.p>
                 <motion.p
                   className="font-semibold text-base"
-                  initial={{ width: 0 }}
-                  animate={{ width: "100%" }}
-                  transition={{ duration: 1, ease: "easeInOut" }}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.4 }}
+                  transition={{ duration: 0.6, ease: "easeOut" }}
                 >
                   My motto is always to try to improve yourself with each
                   passing day 😊!

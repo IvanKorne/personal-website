@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import Headshot from "@/assets/images/headshot.jpeg";
@@ -7,6 +9,7 @@ import grainImage from "@/assets/images/grain.jpg";
 import { Rings } from "./Rings";
 import { Stars } from "./Stars";
 import { Flex } from "@/components/layout/Flex";
+import { motion } from "framer-motion";
 
 export const Hero = () => {
   return (
@@ -52,19 +55,23 @@ export const Hero = () => {
           </p>
         </div>
         <div className="items-center gap-4 mt-8 flex flex-col md:flex-row justify-center">
-          <a
+          <motion.a
             href="#projects"
             className="inline-flex items-center gap-4 border border-white/15 px-6 h-12 rounded-xl z-30"
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.5 }}
           >
             <span className="font-semibold">Explore my page!</span>
             <ArrowDown />
-          </a>
-          <a
+          </motion.a>
+          <motion.a
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.5 }}
             href="#contact"
             className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl z-30"
           >
             👋 <span className="font-semibold"> Let&#39;s connect</span>
-          </a>
+          </motion.a>
         </div>
       </div>
     </div>
